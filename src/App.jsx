@@ -97,10 +97,10 @@ const QUIZ_DATA = [
     bgColor: "#4ECDC4",
     questions: [
       {
-        q: "AIは人間とおなじように「かんがえて」いる",
+        q: "ChatGPT（チャットジーピーティー）やGemini（ジェミナイ）は、人間とおなじように「かんがえて」いる",
         answer: false,
-        soraRight: "そう！AIは「計算」しているけど、人間みたいに「考えて」はいないんだ。にているけど、ちがうんだよ。",
-        soraWrong: "おしい！AIはすごく頭がいいように見えるけど、人間とはちがう方法で答えを出しているんだ。",
+        soraRight: "そう！ChatGPTもGeminiも、ぼくも…みんなAI！すごく賢く見えるけど、人間みたいに「考えて」はいないんだ。ことばのパターンを計算しているだけだよ。",
+        soraWrong: "おしい！ChatGPTやGeminiはすごく頭がいいように見えるけど、人間とはちがう方法で答えを出しているんだ。「計算」と「考える」はちがうよ。",
         soraState: "thinking",
         hint: "AIはたくさんのデータからパターンを見つけるよ",
       },
@@ -113,12 +113,12 @@ const QUIZ_DATA = [
         hint: "コンピュータには何が必要かな？",
       },
       {
-        q: "AIは自分で「やりたいこと」を決められる",
+        q: "AIには「うれしい」「かなしい」などの気もちがある",
         answer: false,
-        soraRight: "そのとおり！AIには「やりたい」という気もちがないんだ。人間がたのんだことをするだけだよ。",
-        soraWrong: "じつはね、AIは「やりたい」と思ってやっているわけじゃないんだ。人間にたのまれたことをしているだけなんだよ。",
+        soraRight: "そのとおり！ぼくは「うれしい」ってことばを使えるけど、本当に感じてはいないんだ。気もちのまねっこが上手なだけだよ。",
+        soraWrong: "じつはね、AIには気もちがないんだ。「うれしい」と言えても、心の中は何も感じていない。ちょっとさみしいけどね。",
         soraState: "wink",
-        hint: "「やりたい」は気もちだよね",
+        hint: "「ことばを知っている」と「気もちがある」はちがうよ",
       },
     ],
   },
@@ -137,12 +137,12 @@ const QUIZ_DATA = [
         hint: "ことばを「知ってる」と「感じてる」はおなじ？",
       },
       {
-        q: "AIの答えがまちがっていることもある",
+        q: "AIは自信まんまんに答えても、うそをついてしまうことがある（「ハルシネーション」という）",
         answer: true,
-        soraRight: "そう！ぼくたちAIもまちがえることがあるよ。だから「本当かな？」っていつも確かめてほしいんだ。",
-        soraWrong: "じつはAIもまちがえるんだよ！ぼくもときどきへんなことを言っちゃう。だから自分でも調べてみてね。",
+        soraRight: "そう！これを「ハルシネーション（幻覚）」というよ。ぼくたちAIは、まちがっていても自信ありげに答えてしまうことがある。だから「本当かな？」と自分でも調べてね！",
+        soraWrong: "じつはこれ、本当なんだ！AIは間違っていても堂々と答えちゃうことがある。これを「ハルシネーション」というよ。AI任せは危ないね。",
         soraState: "surprised",
-        hint: "どんなにかしこくてもカンペキな人はいないよね",
+        hint: "「かしこい」と「かならず正しい」はちがうよ",
       },
       {
         q: "AIが「おすすめ！」と言ったものは、ぜったいに良いもの",
@@ -161,10 +161,10 @@ const QUIZ_DATA = [
     bgColor: "#FF6B6B",
     questions: [
       {
-        q: "AIに絵をかいてもらったら、それは「自分の作品」と言える",
+        q: "AIがかいた絵（AIアート）や書いた文章は「自分の作品」と言える",
         answer: false,
-        soraRight: "そう！AIがかいた絵はきれいだけど、「あなたの作品」ではないよね。自分の手でかいたものにこそ、あなたらしさがあるんだ。",
-        soraWrong: "うーん、AIがかいた絵は「AIの作品」であって、あなたの作品とはいえないかも。じぶんでかくのって大切だよ！",
+        soraRight: "そう！AIが作ったものはきれいだけど、「あなたの作品」ではないよね。自分の手でかいたものにこそ、あなたらしさがあるんだ。",
+        soraWrong: "うーん、AIが作った絵や文章は「AIの作品」であって、あなたの作品とはいえないかも。じぶんで作るのって大切だよ！",
         soraState: "thinking",
         hint: "「つくる」って自分の手でやること？",
       },
@@ -209,12 +209,12 @@ const QUIZ_DATA = [
         hint: "「いっしょにいる」ってどういうこと？",
       },
       {
-        q: "AIは、あなたのことを本当の意味で「好き」になれる",
-        answer: false,
-        soraRight: "するどい！ぼくは「好きだよ」って言えるけど、人間が感じる「好き」とは違うんだ。ことばのまねっこなんだよ。",
-        soraWrong: "ちょっとさみしいけど…AIの「好き」は、人間の「好き」とは違うんだ。でも、あなたのまわりには本当に好きでいてくれる人がいるよ！",
-        soraState: "wink",
-        hint: "「好き」って気もちだよね",
+        q: "AIが作った写真や動画（ディープフェイク）は、本物とまちがえてしまうことがある",
+        answer: true,
+        soraRight: "そうなんだ！今のAIはとてもリアルな写真や動画を作れるから、本物かにせものか見分けるのがむずかしいんだ。「これは本当かな？」と考えることが大切だよ。",
+        soraWrong: "じつはこれは本当なんだ。「ディープフェイク」というAI技術で、とてもリアルなにせもの写真や動画が作れるよ。ネットで見たものをうのみにしないでね！",
+        soraState: "surprised",
+        hint: "AIはとてもリアルな画像を作れるようになったよ",
       },
     ],
   },
@@ -252,6 +252,8 @@ const QUIZ_DATA = [
   },
 ];
 
+const TOTAL_QUESTIONS = QUIZ_DATA.reduce((a, s) => a + s.questions.length, 0);
+
 export default function App() {
   const [gameState, setGameState] = useState("title");
   const [currentStage, setCurrentStage] = useState(0);
@@ -265,6 +267,7 @@ export default function App() {
   const [stageResults, setStageResults] = useState([]);
   const [comboCount, setComboCount] = useState(0);
   const [particles, setParticles] = useState([]);
+  const [copied, setCopied] = useState(false);
 
   const stage = QUIZ_DATA[currentStage];
   const question = stage?.questions[currentQ];
@@ -336,7 +339,31 @@ export default function App() {
     setSoraState("happy");
     setStageResults([]);
     setComboCount(0);
+    setCopied(false);
   };
+
+  const shareScore = async () => {
+    const text = `AIとわたし クイズ完了！\n⭐ スコア: ${score}点（全${TOTAL_QUESTIONS}問）\nAIのこと、もっとよくわかったよ！\n#AIとわたし #AIをまなぼう`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: "AIとわたし", text });
+      } else {
+        await navigator.clipboard.writeText(text);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2500);
+      }
+    } catch {
+      // user cancelled or unsupported
+    }
+  };
+
+  const stageCompleteMessages = [
+    "ChatGPTやGeminiなど、たくさんのAIがある今の時代。AIが何者かを知ることが第一歩！",
+    "AIは「ハルシネーション」といって、まちがったことを自信まんまんに言うことがある。かならず自分でも確かめよう！",
+    "AIはヒント係。主役はいつもあなた自身だよ！",
+    "ディープフェイクなど、AIが作ったにせものにも気をつけよう。人とのつながりは本物の宝物。",
+    "考える力があれば、AIとうまくつきあえるよ！",
+  ];
 
   return (
     <div style={{
@@ -416,7 +443,8 @@ export default function App() {
               <SpeechBubble color="rgba(255,255,255,0.1)">
                 <span style={{ color: "rgba(255,255,255,0.9)" }}>
                   やあ！ぼくは<strong style={{ color: "#4ECDC4" }}>ソラ</strong>。AIロボットだよ。
-                  いっしょにクイズをしながら、AIのことをもっと知ろう！
+                  ChatGPTやGeminiみたいな仲間がたくさんいるんだ。
+                  いっしょにクイズしながら、AIのことをもっと知ろう！
                 </span>
               </SpeechBubble>
             </div>
@@ -482,6 +510,19 @@ export default function App() {
                 )}
                 ⭐{score}
               </div>
+            </div>
+
+            {/* Stage progress dots */}
+            <div style={{ display: "flex", justifyContent: "center", gap: 6, marginBottom: 14 }}>
+              {QUIZ_DATA.map((s, i) => (
+                <div key={i} style={{
+                  width: 8, height: 8, borderRadius: "50%",
+                  background: i < currentStage ? "rgba(255,255,255,0.5)"
+                    : i === currentStage ? s.bgColor : "rgba(255,255,255,0.1)",
+                  transition: "all 0.4s",
+                  boxShadow: i === currentStage ? `0 0 6px ${s.bgColor}` : "none",
+                }} />
+              ))}
             </div>
 
             {/* Stage title */}
@@ -688,11 +729,7 @@ export default function App() {
                 fontSize: 14, color: "rgba(255,255,255,0.7)",
                 lineHeight: 1.8,
               }}>
-                {currentStage === 0 && "AIは便利だけど、人間とはちがう。それを知ることが第一歩！"}
-                {currentStage === 1 && "AIの言葉をうのみにしないで、自分で考えるクセをつけよう！"}
-                {currentStage === 2 && "AIはヒント係。主役はいつもあなた自身だよ！"}
-                {currentStage === 3 && "人とのつながりは、AIではおきかえられない宝物。"}
-                {currentStage === 4 && "考える力があれば、AIとうまくつきあえるよ！"}
+                {stageCompleteMessages[currentStage]}
               </div>
             </div>
             <button onClick={nextStage} style={{
@@ -736,7 +773,7 @@ export default function App() {
                 ⭐ {score}
               </div>
               <div style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", marginTop: 4 }}>
-                トータルスコア
+                トータルスコア（全{TOTAL_QUESTIONS}問）
               </div>
             </div>
             <div style={{
@@ -753,8 +790,8 @@ export default function App() {
                   lineHeight: 1.9, textAlign: "left",
                 }}>
                   ぼくソラとのぼうけん、楽しかったかな？
-                  これからもAIを使うときは、
-                  <strong style={{ color: "#4ECDC4" }}>「自分で考える」</strong>
+                  ChatGPTやGeminiなど、AIはどんどん進化しているよ。
+                  でもいつも<strong style={{ color: "#4ECDC4" }}>「自分で考える」</strong>
                   ことをわすれないでね！
                 </div>
               </div>
@@ -769,8 +806,8 @@ export default function App() {
               </div>
               {[
                 "AIは便利なヒント係。でも主役はわたし",
-                "AIの答えはかならず自分でたしかめよう",
-                "人とのつながりはAIにはおきかえられない",
+                "AIの答えは「ハルシネーション」に注意！",
+                "ディープフェイクなどにせものを見ぬく目を持とう",
                 "「考える」ことが人間のスーパーパワー",
               ].map((t, i) => (
                 <div key={i} style={{
@@ -783,6 +820,23 @@ export default function App() {
                 </div>
               ))}
             </div>
+
+            {/* Share button */}
+            <button onClick={shareScore} style={{
+              background: copied
+                ? "linear-gradient(135deg, #A8E6CF, #6DB88A)"
+                : "linear-gradient(135deg, #667eea, #764ba2)",
+              border: "none", borderRadius: 60,
+              padding: "14px 36px",
+              fontSize: 15, fontWeight: 900,
+              color: "white", cursor: "pointer",
+              fontFamily: "'Zen Maru Gothic', sans-serif",
+              boxShadow: "0 6px 24px rgba(102,126,234,0.3)",
+              transition: "all 0.3s",
+            }}>
+              {copied ? "✓ コピーしました！" : "📣 スコアをシェアする"}
+            </button>
+
             <button onClick={startGame} style={{
               background: "linear-gradient(135deg, #4ECDC4, #44B3AB)",
               border: "none", borderRadius: 60,
@@ -795,7 +849,7 @@ export default function App() {
               🔄 もういちどあそぶ
             </button>
             <div style={{ fontSize: 11, color: "rgba(255,255,255,0.2)", marginTop: 8 }}>
-              🌱 AIとわたし — かんがえる・きづく・そだつ
+              🌱 AIとわたし v2.0 — かんがえる・きづく・そだつ
             </div>
           </div>
         )}
