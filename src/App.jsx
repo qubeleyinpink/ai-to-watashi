@@ -439,18 +439,18 @@ export default function App() {
               </p>
             </div>
             <div style={{
-              background: "rgba(255,255,255,0.06)",
-              borderRadius: 20, padding: "20px 24px",
-              maxWidth: 320,
+              background: "rgba(255,255,255,0.08)",
+              borderRadius: 20, padding: "18px 22px",
+              maxWidth: 320, width: "100%",
+              fontSize: 14, lineHeight: 1.9,
+              color: "rgba(255,255,255,0.9)",
+              fontWeight: 500,
               textAlign: "left",
+              animation: "fadeSlideIn 0.4s ease",
             }}>
-              <SpeechBubble color="rgba(255,255,255,0.1)">
-                <span style={{ color: "rgba(255,255,255,0.9)" }}>
-                  やあ！ぼくは<strong style={{ color: "#4ECDC4" }}>ソラ</strong>。AIロボットだよ。
-                  ChatGPT・Gemini・Claudeみたいな仲間がたくさんいるんだ。
-                  いっしょにクイズしながら、AIのことをもっと知ろう！
-                </span>
-              </SpeechBubble>
+              やあ！ぼくは<strong style={{ color: "#4ECDC4" }}>ソラ</strong>。AIロボットだよ。
+              ChatGPT・Gemini・Claudeみたいな仲間がたくさんいるんだ。
+              いっしょにクイズしながら、AIのことをもっと知ろう！
             </div>
             <button
               onClick={startGame}
