@@ -100,7 +100,7 @@ const QUIZ_DATA = [
     bgColor: "#4ECDC4",
     questions: [
       {
-        q: "ChatGPT（チャットジーピーティー）やGemini（ジェミナイ）、Claude（クロード）は、人間とおなじように「かんがえて」いる",
+        q: "ChatGPT（チャットジーピーティー）やGemini（ジェミニ）、Claude（クロード）は、人間とおなじように「かんがえて」いる",
         answer: false,
         soraRight: "そう！ChatGPTもGeminiもClaude（これがぼくの仲間！）も…みんなAI！すごく賢く見えるけど、人間みたいに「考えて」はいないんだ。ことばのパターンを計算しているだけだよ。",
         soraWrong: "おしい！ChatGPTやGemini、Claudeはすごく頭がいいように見えるけど、人間とはちがう方法で答えを出しているんだ。「計算」と「考える」はちがうよ。",
