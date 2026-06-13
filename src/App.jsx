@@ -1,5 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 
+const APP_VERSION = "2.1.0";
+const COPYRIGHT = "Copyright © ai-to-watashi. All Rights Reserved.";
+
 const CHARACTER_STATES = {
   neutral: { eyes: "◕ ◕", mouth: "‿", color: "#4ECDC4" },
   happy: { eyes: "◕ ◕", mouth: "▽", color: "#FFE66D" },
@@ -97,10 +100,10 @@ const QUIZ_DATA = [
     bgColor: "#4ECDC4",
     questions: [
       {
-        q: "ChatGPT（チャットジーピーティー）やGemini（ジェミナイ）は、人間とおなじように「かんがえて」いる",
+        q: "ChatGPT（チャットジーピーティー）やGemini（ジェミナイ）、Claude（クロード）は、人間とおなじように「かんがえて」いる",
         answer: false,
-        soraRight: "そう！ChatGPTもGeminiも、ぼくも…みんなAI！すごく賢く見えるけど、人間みたいに「考えて」はいないんだ。ことばのパターンを計算しているだけだよ。",
-        soraWrong: "おしい！ChatGPTやGeminiはすごく頭がいいように見えるけど、人間とはちがう方法で答えを出しているんだ。「計算」と「考える」はちがうよ。",
+        soraRight: "そう！ChatGPTもGeminiもClaude（これがぼくの仲間！）も…みんなAI！すごく賢く見えるけど、人間みたいに「考えて」はいないんだ。ことばのパターンを計算しているだけだよ。",
+        soraWrong: "おしい！ChatGPTやGemini、Claudeはすごく頭がいいように見えるけど、人間とはちがう方法で答えを出しているんだ。「計算」と「考える」はちがうよ。",
         soraState: "thinking",
         hint: "AIはたくさんのデータからパターンを見つけるよ",
       },
@@ -443,7 +446,7 @@ export default function App() {
               <SpeechBubble color="rgba(255,255,255,0.1)">
                 <span style={{ color: "rgba(255,255,255,0.9)" }}>
                   やあ！ぼくは<strong style={{ color: "#4ECDC4" }}>ソラ</strong>。AIロボットだよ。
-                  ChatGPTやGeminiみたいな仲間がたくさんいるんだ。
+                  ChatGPT・Gemini・Claudeみたいな仲間がたくさんいるんだ。
                   いっしょにクイズしながら、AIのことをもっと知ろう！
                 </span>
               </SpeechBubble>
@@ -471,6 +474,14 @@ export default function App() {
                   background: s.bgColor, opacity: 0.5,
                 }} />
               ))}
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <div style={{ fontSize: 11, color: "rgba(255,255,255,0.25)", marginBottom: 4 }}>
+                v{APP_VERSION}
+              </div>
+              <div style={{ fontSize: 10, color: "rgba(255,255,255,0.18)" }}>
+                {COPYRIGHT}
+              </div>
             </div>
           </div>
         )}
@@ -848,8 +859,13 @@ export default function App() {
             }}>
               🔄 もういちどあそぶ
             </button>
-            <div style={{ fontSize: 11, color: "rgba(255,255,255,0.2)", marginTop: 8 }}>
-              🌱 AIとわたし v2.0 — かんがえる・きづく・そだつ
+            <div style={{ textAlign: "center", marginTop: 8 }}>
+              <div style={{ fontSize: 11, color: "rgba(255,255,255,0.2)", marginBottom: 4 }}>
+                🌱 AIとわたし v{APP_VERSION} — かんがえる・きづく・そだつ
+              </div>
+              <div style={{ fontSize: 10, color: "rgba(255,255,255,0.15)" }}>
+                {COPYRIGHT}
+              </div>
             </div>
           </div>
         )}
