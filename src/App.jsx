@@ -442,6 +442,7 @@ export default function App() {
               background: "rgba(255,255,255,0.06)",
               borderRadius: 20, padding: "20px 24px",
               maxWidth: 320,
+              textAlign: "left",
             }}>
               <SpeechBubble color="rgba(255,255,255,0.1)">
                 <span style={{ color: "rgba(255,255,255,0.9)" }}>
